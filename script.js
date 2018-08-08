@@ -125,7 +125,7 @@ function School() {
     this.findStudentByName = function(studentName) {
         for(let student of this.studentList) {
             if (student.name == studentName) {
-                student.studentInfo();
+                return student.studentInfo();
             }
         }
     }
@@ -133,7 +133,7 @@ function School() {
     this.findTeacherByName = function(teacherName) {
         for(let teacher of this.teacherList) {
             if (teacher.name == teacherName) {
-                teacher.teacherInfo();
+                return teacher.teacherInfo();
             }
         }
     }
