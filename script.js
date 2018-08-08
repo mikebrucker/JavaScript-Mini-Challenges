@@ -37,7 +37,7 @@ function Album() {
         } return photoList.join(', ');
     }
 
-    this.infoOfPhotoNumber = function() {
+    this.infoOfPhotoNumber = function(photoNumber) {
         return this.photos[photoNumber - 1].info();
     }
 }
